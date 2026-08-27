@@ -203,26 +203,7 @@ python main.py
 
 ![CrewAI Ollama Demo](./CrewAI_Ollama_Demo.png)
 
-```mermaid
-flowchart TD
-    A[WSL: python main.py] --> B[CrewAI Crew 启动]
-    B --> C[Process.sequential 顺序执行]
 
-    C --> D[Task 1: 研究 AI 趋势]
-    D --> E[Agent: 资深研究员]
-    E --> F[Ollama Local LLM: qwen2.5-coder:7b]
-    F --> G[输出: 3 个趋势]
-
-    G --> H[Task 2: 写中文短文]
-    H --> I[Agent: 内容作家]
-    I --> F
-    F --> J[输出: 博客短文]
-
-    J --> K[Task 3: 审稿优化]
-    K --> L[Agent: 专业审稿人]
-    L --> F
-    F --> M[最终输出: 优化短文 + 审稿意见]
-```
 
 ## 本次运行结果摘要
 
